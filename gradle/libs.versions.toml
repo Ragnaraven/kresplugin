@@ -1,0 +1,27 @@
+[versions]
+agp = "8.0.2"
+kotlin = "1.9.0"
+
+#standard
+android-compileSdk = "33"
+android-minSdk = "26"
+android-targetSdk = "33"
+kotlinpoet = "1.14.2"
+kotlinx-serialization = "1.6.0-RC"
+
+[libraries]
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version = { ref = "kotlin" } }
+kotlinpoet = { group = "com.squareup", name = "kotlinpoet", version.ref = "kotlinpoet" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version = { ref = "kotlinx-serialization" } }
+kotlinx-serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = { ref = "kotlinx-serialization" } }
+
+[plugins]
+android-application = { id = "com.android.application", version = { ref = "agp" } }
+android-base = { id = "com.android.base", version = { ref = "agp" } }
+android-library = { id = "com.android.library", version = { ref = "agp" } }
+jvm = { id = "org.jetbrains.kotlin.jvm", version = { ref = "kotlin" } }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = { ref = "kotlin" } }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = { ref = "kotlin" } }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version = { ref = "kotlin" } }
+native-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version = { ref = "kotlin" } }
