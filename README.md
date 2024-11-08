@@ -1,3 +1,6 @@
+## KRES is an active work in progress! 
+
+
 # KRes - Kotlin Resource Generator Plugin
 
 KRes is a Gradle plugin for Kotlin Multiplatform projects that generates type-safe resource accessors for strings and files. It helps manage localized strings and file resources in a clean, type-safe way. 
@@ -19,7 +22,7 @@ Add to your project's buildscript:
 
 ```kotlin
 plugins {
-    id("io.kresplugin") version "1.0.0"
+    id("kresplugin") version "1.0.0"
 }
 ```
 
